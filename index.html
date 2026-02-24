@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HandyMan Juan Suarez | Painting • Flooring • Carpentry • Remodeling</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f8fafc;
+    color: #1e293b;
+}
+
+/* Top Bar */
+.top-bar {
+    background: #f97316;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.top-bar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Header */
+header {
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(8px);
+    background: rgba(15, 23, 42, 0.95);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+    z-index: 1000;
+}
+
+header img {
+    height: 70px;
+}
+
+nav a {
+    color: white;
+    margin-left: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #f97316;
+}
+
+/* Hero */
+.hero {
+    height: 90vh;
+    background: linear-gradient(rgba(15,23,42,0.85), rgba(15,23,42,0.85)),
+                url('images/20250320_144916.jpg') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+
+.btn {
+    background: #f97316;
+    padding: 15px 35px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ea580c;
+    transform: translateY(-3px);
+}
+
+/* Sections */
+section {
+    padding: 100px 60px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 60px;
+}
+
+/* Services */
+.services {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service-box {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    width: 300px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.3s;
+    text-align: center;
+}
+
+.service-box:hover {
+    transform: translateY(-10px);
+}
+
+.service-box h3 {
+    margin-bottom: 15px;
+}
+
+/* Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Contact */
+.contact-container {
+    max-width: 600px;
+    margin: auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-family: 'Poppins', sans-serif;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+    background: #0f172a;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #1e293b;
+}
+
+/* Footer */
+footer {
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    margin-top: 60px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="top-bar">
+📞 <a href="tel:2142805143">214-280-5143</a> |
+<a href="tel:9726025837">972-602-5837</a> |
+✉ <a href="mailto:juansuarez1665@gmail.com">juansuarez1665@gmail.com</a>
+</div>
+
+<header>
+<img src="logo.png" alt="HandyMan Juan Logo">
+<h1>HandyMan Juan Suarez</h1>
+<nav>
+<a href="#services">Services</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<h1>Premium Craftsmanship You Can Trust</h1>
+<p>Professional Painting, Flooring, Remodeling, and Custom Carpentry Services Serving the Dallas Area.</p>
+<a href="#contact" class="btn">Request a Free Estimate</a>
+</section>
+
+<section id="services">
+<h2 class="section-title">Our Services</h2>
+<div class="services">
+<div class="service-box">
+<h3>Interior & Exterior Painting</h3>
+<p>Clean lines, smooth finishes, and attention to detail.</p>
+</div>
+<div class="service-box">
+<h3>Floor Installation</h3>
+<p>Hardwood, vinyl, laminate, and tile installed professionally.</p>
+</div>
+<div class="service-box">
+<h3>Remodeling</h3>
+<p>Bathroom, kitchen, patio awning, wood deck with strong stairs and sturdy hand rail.</p>
+</div>
+<div class="service-box">
+<h3>Custom Carpentry</h3>
+<p>Trim, cabinets, framing, and high-quality woodwork.</p>
+</div>
+
+</div>
+</section>
+
+<section id="gallery">
+<h2 class="section-title">Recent Projects</h2>
+<div class="gallery">
+<img src="images\20240422_130805.jpg">
+<img src="images\20241001_085617.jpg">
+<img src="images\20241003_100026.jpg">
+<img src="images\bathroom.jpg">
+<img src="images\20250429_210101.jpg">
+<img src="images\20250429_210117.jpg">
+<img src="images\20250503_154329.jpg">
+<img src="images\20250503_162253.jpg">
+<img src="images\20240304_151459.jpg">
+<img src="images\20240306_113536.jpg">
+<img src="images\20240221_131506.jpg">
+<img src="images\20240206_150456.jpg">
+<img src="images\20240930_165814.jpg">
+<img src="images\20240930_165817.jpg">
+<img src="images\20241001_161236.jpg">
+<img src="images\20241001_161300.jpg">
+
+<img src="images\20240223_121612.jpg">
+<img src="images\20240418_151853.jpg">
+<img src="images\20240705_145758.jpg">
+<img src="images\20240705_145804.jpg">
+
+</div>
+</section>
+
+<section id="contact">
+<h2 class="section-title">Get Your Free Estimate</h2>
+<div class="contact-container">
+<form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+<input type="hidden" name="form-name" value="contact" />
+<p style="display:none">
+<label>Don’t fill this out: <input name="bot-field" /></label>
+</p>
+
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email" required>
+<textarea name="message" rows="5" placeholder="Tell us about your project..." required></textarea>
+<button type="submit">Send Message</button>
+</form>
+</div>
+</section>
+
+<footer>
+© 2026 HandyMan Juan | Professional Painting • Flooring • Carpentry • Remodeling
+</footer>
+
+</body>
+</html>
