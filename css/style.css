@@ -196,7 +196,21 @@ nav a:hover::after {
 /* ===== MOBILE ===== */
 
 @media (max-width: 768px) {
+.right {
+  align-items: center;
+  text-align: center;
+}
 
+.top-bar {
+  flex-direction: column;
+  gap: 10px;
+}
+
+.menu-toggle {
+  position: absolute;
+  right: 20px;
+  top: 25px;
+}
   .top-bar {
     padding: 15px 20px;
   }
@@ -230,6 +244,7 @@ nav a:hover::after {
     height: 55px;
   }
 }
+
 
 
 
