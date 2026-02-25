@@ -280,22 +280,50 @@ footer {
 </section>
 
 <section id="contact">
-<h2 class="section-title">Get Your Free Estimate</h2>
-<div class="contact-container">
-<form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-<input type="hidden" name="form-name" value="contact" />
-<p style="display:none">
-<label>Don’t fill this out: <input name="bot-field" /></label>
-</p>
+  <h2 class="section-title">Get Your Free Estimate</h2>
+  <div class="contact-container">
 
-<input type="text" name="name" placeholder="Your Name" required>
-<input type="email" name="email" placeholder="Your Email" required>
-<textarea name="message" rows="5" placeholder="Tell us about your project..." required></textarea>
-<button type="submit">Send Message</button>
-</form>
-</div>
+    <form action="https://formspree.io/f/mpqjbapq" method="POST">
+
+      <input 
+        type="text" 
+        name="name" 
+        placeholder="Your Name" 
+        required
+      >
+
+      <input 
+        type="email" 
+        name="email" 
+        placeholder="Your Email" 
+        required
+      >
+
+      <input 
+        type="tel" 
+        name="phone" 
+        placeholder="Your Phone Number"
+      >
+
+      <textarea 
+        name="message" 
+        rows="5" 
+        placeholder="Tell us about your project..." 
+        required
+      ></textarea>
+
+      <!-- Optional Email Subject -->
+      <input type="hidden" name="_subject" value="New Estimate Request - HandyMan Juan">
+
+      <!-- Redirect back to your website after submission -->
+      <input type="hidden" name="_redirect" value="https://aandrade75217.github.io/handyman-juan/">
+
+      <button type="submit">Send Message</button>
+
+    </form>
+
+  </div>
 </section>
-
 <footer>
 © 2026 HandyMan Juan | Professional Painting • Flooring • Carpentry • Remodeling
 </footer>
@@ -303,4 +331,5 @@ footer {
 </body>
 
 </html>
+
 
