@@ -47,9 +47,14 @@ body {
   transform: translateY(-8px);
   box-shadow: 0 15px 30px rgba(0,0,0,0.1);
 }
-
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
 /* Highlight for Bathroom Remodeling */
 .service-card.highlight {
   border: 2px solid #c89b3c;
   transform: scale(1.03);
+
 }
