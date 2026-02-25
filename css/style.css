@@ -58,99 +58,60 @@ body {
   transform: scale(1.03);
 
 }
-/* ===== HEADER STYLING ===== */
-
-/* ===== MODERN STICKY HEADER ===== */
-
-/* ===== PREMIUM STICKY HEADER ===== */
+/* ===== CLEAN FIXED HEADER ===== */
 
 header {
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 1000;
-  background: #111;
-  transition: all 0.3s ease;
-}
-
-/* Gold Accent Line */
-.gold-line {
-  height: 4px;
-  background: #c89b3c;
   width: 100%;
+  background: #111;
+  padding: 15px 40px;
+  border-bottom: 4px solid #c89b3c; /* Gold line */
+  z-index: 1000;
 }
 
-/* Top Bar Layout */
-.top-bar {
+.header-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 20px 40px;
-  color: white;
-}
-
-/* Left side (logo) */
-.left {
-  display: flex;
-  align-items: center;
-}
-
-/* Right side (name + button stacked) */
-.right {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 8px;
-}
-
-/* Adjust title */
-.right h1 {
-  margin: 0;
-  font-size: 2rem;
-  text-align: right;
-}
-
-/* Shrink Effect */
-header.shrink .top-bar {
-  padding: 10px 40px;
-}
-
-header.shrink h1 {
-  font-size: 1.5rem;
+  gap: 20px;
 }
 
 /* Logo */
 .logo {
-  height: 70px;
-  transition: transform 0.3s ease;
+  height: 80px;
+  width: auto;
 }
 
-.logo:hover {
-  transform: scale(1.08) rotate(-3deg);
-}
-
-/* Title */
-h1 {
-  margin: 0;
-  font-size: 2rem;
+/* Text section */
+.business-text {
+  display: flex;
+  flex-direction: column;
   color: white;
 }
 
-/* Call Button */
-.call-btn {
-  background: #c89b3c;
-  color: black;
-  padding: 10px 18px;
-  border-radius: 25px;
-  text-decoration: none;
+/* HandyMan */
+.title-main {
+  font-size: 1.8rem;
   font-weight: bold;
-  transition: 0.3s;
 }
 
-.call-btn:hover {
-  background: #e0b04b;
-  transform: translateY(-2px);
+/* Juan Suarez */
+.title-name {
+  font-size: 1.4rem;
 }
 
+/* Phone */
+.phone {
+  font-size: 1rem;
+  color: #c89b3c;
+  margin-top: 5px;
+}
+
+/* Prevent content hiding under fixed header */
+body {
+  margin: 0;
+  padding-top: 130px;
+}
 /* Navigation */
 nav {
   display: flex;
@@ -260,6 +221,7 @@ nav a:hover::after {
   }
 
 }
+
 
 
 
