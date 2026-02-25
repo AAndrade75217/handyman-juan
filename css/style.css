@@ -60,36 +60,91 @@ body {
 }
 /* ===== HEADER STYLING ===== */
 
+/* ===== MODERN STICKY HEADER ===== */
+
 header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  background: rgba(17, 17, 17, 0.95);
+  backdrop-filter: blur(8px);
+
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  background-color: #111; /* Dark background */
-  padding: 15px 40px;
-  color: #ffffff;
+  justify-content: center;
+
+  padding: 15px 20px;
+  text-align: center;
+
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
 }
 
+/* Logo */
 header img {
-  height: 60px;
+  height: 70px;
   width: auto;
+  margin-bottom: 10px;
 }
 
+/* Business Name */
 header h1 {
-  font-size: 1.8rem;
-  margin: 0 20px;
+  margin: 0;
+  font-size: 2rem;
   color: #ffffff;
-  white-space: nowrap;
+  letter-spacing: 1px;
+}
+
+/* Navigation */
+nav {
+  margin-top: 10px;
 }
 
 nav a {
   color: #ffffff;
   text-decoration: none;
-  margin-left: 20px;
+  margin: 0 15px;
   font-weight: 500;
-  transition: 0.3s;
+  font-size: 1rem;
+  transition: 0.3s ease;
+  position: relative;
+}
+
+/* Modern hover underline animation */
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background-color: #c89b3c;
+  transition: 0.3s ease;
 }
 
 nav a:hover {
-  color: #c89b3c; /* gold highlight */
+  color: #c89b3c;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+  header {
+    padding: 20px 10px;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
 }
 
