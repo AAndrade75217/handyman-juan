@@ -88,6 +88,27 @@ header {
   color: white;
 }
 
+/* Left side (logo) */
+.left {
+  display: flex;
+  align-items: center;
+}
+
+/* Right side (name + button stacked) */
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+/* Adjust title */
+.right h1 {
+  margin: 0;
+  font-size: 2rem;
+  text-align: right;
+}
+
 /* Shrink Effect */
 header.shrink .top-bar {
   padding: 10px 40px;
@@ -209,5 +230,6 @@ nav a:hover::after {
     height: 55px;
   }
 }
+
 
 
