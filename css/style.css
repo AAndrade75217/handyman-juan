@@ -58,3 +58,38 @@ body {
   transform: scale(1.03);
 
 }
+/* ===== HEADER STYLING ===== */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #111; /* Dark background */
+  padding: 15px 40px;
+  color: #ffffff;
+}
+
+header img {
+  height: 60px;
+  width: auto;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  margin: 0 20px;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #c89b3c; /* gold highlight */
+}
+
