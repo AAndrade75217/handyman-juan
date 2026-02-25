@@ -244,6 +244,22 @@ nav a:hover::after {
     height: 55px;
   }
 }
+@media (max-width: 768px) {
+
+  .header-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo {
+    height: 70px;
+  }
+
+  .business-info {
+    align-items: center;
+  }
+
+}
 
 
 
