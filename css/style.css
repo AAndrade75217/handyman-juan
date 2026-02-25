@@ -221,6 +221,74 @@ nav a:hover::after {
   }
 
 }
+/* ===== HEADER WITH NAVIGATION ===== */
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(15, 23, 42, 0.95);
+  backdrop-filter: blur(8px);
+  border-bottom: 4px solid #f97316;
+  z-index: 1000;
+  padding: 15px 60px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  height: 70px;
+}
+
+.business-text {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.title-main {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.title-name {
+  font-size: 1.2rem;
+}
+
+.phone {
+  font-size: 0.9rem;
+  color: #f97316;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #f97316;
+}
+
+body {
+  padding-top: 120px;
+}
 
 
 
