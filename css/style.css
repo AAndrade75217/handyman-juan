@@ -289,6 +289,11 @@ nav a:hover {
 body {
   padding-top: 120px;
 }
+#services,
+#gallery,
+#contact {
+    scroll-margin-top: 130px;
+}
 
 
 
